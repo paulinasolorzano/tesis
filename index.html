@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía para la Redacción de Tesis · MITI · UTM</title>
+<meta name="description" content="Guía para la redacción del reporte técnico de tesis de la Maestría en Ingeniería Aplicada en la Innovación Tecnológica (MITI) de la UTM: estructura oficial, formato, citación APA 7.ª edición y ejemplos.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%230b1220%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%23c9a35a%22 font-family=%22Georgia,serif%22>T</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#0a0f1c;
+    --navy-900:#0f1729;
+    --navy-800:#16213a;
+    --navy-700:#1f2d4d;
+    --navy-600:#2a3c63;
+    --slate-300:#c7cedb;
+    --slate-400:#94a1b8;
+    --slate-500:#6b7690;
+    --paper:#f8f6f1;
+    --paper-dim:#efece3;
+    --ink:#1b2130;
+    --ink-soft:#3c4457;
+    --gold:#b6903f;
+    --gold-light:#d9b876;
+    --gold-dim:#8a6f36;
+    --teal:#2f6f6d;
+    --teal-light:#e6f0ef;
+    --danger:#9c3b3b;
+    --danger-light:#fbecec;
+    --ok:#2f6f4f;
+    --ok-light:#eaf5ee;
+    --radius:10px;
+    --shadow:0 1px 2px rgba(10,15,28,.06), 0 8px 24px -12px rgba(10,15,28,.18);
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Source Serif 4', Georgia, serif;
+    color:var(--navy-950);
+    line-height:1.2;
+    margin:0 0 .5em;
+  }
+  a{color:inherit;}
+  img{max-width:100%;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  code, .mono{font-family:'JetBrains Mono', ui-monospace, monospace; font-size:.92em;}
+
+  /* ---------- nav ---------- */
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:var(--navy-700);
+    border-bottom:1px solid var(--navy-600);
+    box-shadow:0 1px 4px rgba(10,15,28,.12);
+  }
+  .nav-inner{
+    max-width:var(--maxw); margin:0 auto; padding:0 24px;
+    display:flex; align-items:center; gap:2px;
+    flex-wrap:wrap;
+  }
+  .nav-brand{
+    display:flex; align-items:center; gap:9px; flex-shrink:0;
+    color:#fff; font-family:'Source Serif 4',serif; font-weight:600; font-size:.9rem;
+    padding:10px 16px 10px 0; white-space:nowrap; border-right:1px solid var(--navy-600); margin-right:6px;
+  }
+  .nav-brand img{height:26px; width:auto; display:block; flex-shrink:0;}
+  .nav-brand .brand-text{white-space:nowrap;}
+  .nav-brand .brand-text b{color:var(--gold-light); font-weight:600;}
+  .nav-inner a.navlink{
+    white-space:nowrap; color:var(--slate-400); text-decoration:none;
+    font-size:.84rem; font-weight:500; padding:14px 12px; border-bottom:2px solid transparent;
+    transition:color .15s, border-color .15s;
+  }
+  .nav-inner a.navlink:hover{color:#fff;}
+  .nav-inner a.navlink.active{color:#fff; font-weight:600; border-bottom-color:var(--gold);}
+
+  /* ---------- hero ---------- */
+  header.hero{
+    position:relative;
+    background:
+      radial-gradient(1100px 460px at 88% -25%, rgba(182,144,63,.10), transparent 55%),
+      linear-gradient(180deg, #fff, var(--paper) 70%);
+    color:var(--ink);
+    padding:28px 0 32px;
+    border-bottom:1px solid #e6e2d6;
+    overflow:hidden;
+  }
+  header.hero::before{
+    content:"";
+    position:absolute; inset:0; pointer-events:none; opacity:.6;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg fill='none' stroke='%230a0f1c' stroke-opacity='0.05' stroke-width='1.4'%3E%3Cpath d='M20 0v40a8 8 0 0 0 8 8h50'/%3E%3Ccircle cx='84' cy='48' r='3.2'/%3E%3Cpath d='M120 0v70a8 8 0 0 1-8 8H70'/%3E%3Ccircle cx='62' cy='78' r='3.2'/%3E%3Cpath d='M180 20h-30a8 8 0 0 0-8 8v60'/%3E%3Ccircle cx='150' cy='20' r='3.2'/%3E%3Cpath d='M0 130h40a8 8 0 0 1 8 8v50'/%3E%3Ccircle cx='40' cy='130' r='3.2'/%3E%3Cpath d='M220 150h-50a8 8 0 0 0-8 8v40'/%3E%3Ccircle cx='170' cy='150' r='3.2'/%3E%3C/g%3E%3C/svg%3E");
+    background-size:220px 220px;
+  }
+  .hero-top{
+    position:relative; display:flex; align-items:center; justify-content:space-between; gap:24px; margin-bottom:20px;
+  }
+  .hero-logo{height:46px; width:auto; flex-shrink:0;}
+  .hero-crumb{
+    font-size:.76rem; letter-spacing:.1em; text-transform:uppercase; color:var(--slate-500);
+  }
+  .hero-crumb b{color:var(--gold-dim); font-weight:600;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:.72rem; letter-spacing:.13em; text-transform:uppercase;
+    color:var(--gold-dim); font-weight:700;
+    border:1px solid #e9dfc3; background:#fbf6ea;
+    padding:5px 13px; border-radius:100px; margin-bottom:14px;
+  }
+  header.hero h1{
+    color:var(--navy-950); font-size:clamp(1.55rem, 2.6vw, 2.05rem); max-width:34ch; margin-bottom:.35em;
+  }
+  header.hero .lede{
+    color:var(--ink-soft); font-size:.96rem; max-width:68ch; margin-bottom:0;
+  }
+  .hero-main{position:relative; display:flex; gap:40px; align-items:flex-end; flex-wrap:wrap; margin-bottom:24px;}
+  .hero-main .hero-copy{flex:1; min-width:280px;}
+  .hero-stats-inline{display:flex; gap:22px; flex-wrap:wrap;}
+  .hero-stats-inline div{white-space:nowrap;}
+  .hero-stats-inline .n{font-family:'Source Serif 4',serif; font-size:1.3rem; color:var(--gold-dim); font-weight:600; line-height:1;}
+  .hero-stats-inline .l{font-size:.72rem; color:var(--slate-500); margin-top:2px;}
+
+  .toc-kicker{
+    position:relative; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--slate-500); font-weight:600; margin-bottom:10px; display:flex; align-items:center; gap:8px;
+  }
+  .toc-kicker::after{content:""; flex:1; height:1px; background:#e6e2d6;}
+  .toc-grid{
+    position:relative; display:grid; grid-template-columns:repeat(3, 1fr); gap:10px;
+    background:transparent; border-bottom:none; box-shadow:none;
+  }
+  @media (max-width:900px){ .toc-grid{grid-template-columns:repeat(2, 1fr);} }
+  @media (max-width:560px){ .toc-grid{grid-template-columns:1fr;} }
+  .toc-card{
+    display:flex; align-items:flex-start; gap:11px;
+    background:#fff; border:1px solid #e6e2d6; border-radius:9px; box-shadow:var(--shadow);
+    padding:12px 14px; text-decoration:none; transition:border-color .15s, transform .15s, box-shadow .15s;
+  }
+  .toc-card:hover{border-color:var(--gold); transform:translateY(-1px); box-shadow:0 4px 14px -6px rgba(10,15,28,.18);}
+  .toc-card .tn{
+    font-family:'Source Serif 4',serif; font-weight:700; font-size:.85rem; color:var(--gold-dim);
+    flex-shrink:0; width:24px; height:24px; border:1px solid #ecdcb4; background:#fbf6ea; border-radius:6px;
+    display:flex; align-items:center; justify-content:center; margin-top:1px;
+  }
+  .toc-card .tt{color:var(--navy-950); font-size:.87rem; font-weight:600; display:block; margin-bottom:2px;}
+  .toc-card .td{color:var(--slate-500); font-size:.78rem; line-height:1.4;}
+  @media (max-width:700px){ .hero-logo{height:36px;} }
+
+  /* ---------- sections generic ---------- */
+  main section{padding:44px 0; border-bottom:1px solid #e6e2d6;}
+  main section:last-of-type{border-bottom:none;}
+  .section-head{margin-bottom:28px; max-width:70ch;}
+  .section-kicker{
+    font-size:.76rem; letter-spacing:.12em; text-transform:uppercase; color:var(--gold-dim); font-weight:700; margin-bottom:8px;
+  }
+  .section-head h2{font-size:clamp(1.5rem,2.6vw,2rem);}
+  .section-head p{color:var(--ink-soft); font-size:1.02rem;}
+
+  /* ---------- cards ---------- */
+  .card{
+    background:#fff; border:1px solid #e6e2d6; border-radius:var(--radius);
+    padding:18px 20px; box-shadow:var(--shadow);
+  }
+  .grid{display:grid; gap:14px;}
+  .grid-2{grid-template-columns:1fr 1fr;}
+  .grid-3{grid-template-columns:repeat(3,1fr);}
+  .grid-4{grid-template-columns:repeat(4,1fr);}
+  @media (max-width:820px){ .grid-2,.grid-3,.grid-4{grid-template-columns:1fr;} }
+
+  /* level badges for título hierarchy */
+  .lvl{
+    display:inline-block; font-size:.72rem; font-weight:700; padding:2px 9px; border-radius:5px;
+    background:var(--navy-900); color:#fff; letter-spacing:.03em; margin-right:8px;
+  }
+
+  /* chapter block */
+  .chapter{
+    border:1px solid #e6e2d6; border-radius:var(--radius); background:#fff; box-shadow:var(--shadow);
+    margin-bottom:14px; overflow:hidden;
+  }
+  .chapter-head{
+    display:flex; align-items:baseline; gap:14px; padding:15px 20px;
+    background:linear-gradient(180deg,#fff,#faf9f5); border-bottom:1px solid #eee9db;
+  }
+  .chapter-num{
+    font-family:'Source Serif 4',serif; font-weight:700; font-size:1.5rem; color:var(--gold-dim);
+    flex-shrink:0;
+  }
+  .chapter-head h3{margin:0; font-size:1.18rem;}
+  .chapter-head .tag{
+    margin-left:auto; font-size:.72rem; color:var(--slate-500); border:1px solid #ddd6c3; padding:3px 9px; border-radius:100px; white-space:nowrap;
+  }
+  .chapter-body{padding:18px 20px;}
+  .chapter-body h4{font-size:.98rem; margin:18px 0 8px; color:var(--navy-800);}
+  .chapter-body h4:first-child{margin-top:0;}
+  .chapter-body p{margin:0 0 12px; color:var(--ink-soft);}
+  .chapter-body ul{margin:0 0 12px; padding-left:20px; color:var(--ink-soft);}
+  .chapter-body li{margin-bottom:5px;}
+  .sub{
+    border-left:3px solid #eee2c2; padding:4px 0 4px 16px; margin:14px 0;
+  }
+  .sub h5{margin:0 0 6px; font-size:.92rem; color:var(--navy-900); font-family:'Inter'; font-weight:700;}
+
+  /* example / tip boxes */
+  .example{
+    background:var(--teal-light); border:1px solid #cfe3e0; border-left:4px solid var(--teal);
+    border-radius:8px; padding:14px 18px; margin:14px 0; font-size:.95rem;
+  }
+  .example .lab{font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; color:var(--teal); margin-bottom:6px;}
+  .warn{
+    background:var(--danger-light); border:1px solid #f0d3d3; border-left:4px solid var(--danger);
+    border-radius:8px; padding:14px 18px; margin:14px 0; font-size:.95rem;
+  }
+  .warn .lab{font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; color:var(--danger); margin-bottom:6px;}
+  .ok-box{
+    background:var(--ok-light); border:1px solid #cfe6d6; border-left:4px solid var(--ok);
+    border-radius:8px; padding:14px 18px; margin:14px 0; font-size:.95rem;
+  }
+  .ok-box .lab{font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; color:var(--ok); margin-bottom:6px;}
+  .gold-box{
+    background:#fbf4e6; border:1px solid #ecdcb4; border-left:4px solid var(--gold);
+    border-radius:8px; padding:14px 18px; margin:14px 0; font-size:.95rem;
+  }
+  .gold-box .lab{font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; color:var(--gold-dim); margin-bottom:6px;}
+
+  /* index/toc list */
+  .toc-list{list-style:none; margin:0; padding:0; counter-reset:toc; columns:2; column-gap:32px;}
+  @media (max-width:700px){ .toc-list{columns:1;} }
+  .toc-list > li{
+    counter-increment:toc; position:relative; padding:9px 0 9px 36px; border-bottom:1px dashed #e2ddcc;
+    font-size:.9rem; break-inside:avoid;
+  }
+  .toc-list > li::before{
+    content:counter(toc, lower-alpha) ")"; position:absolute; left:0; top:10px; color:var(--gold-dim); font-weight:700; font-family:'Source Serif 4',serif;
+  }
+  .toc-list b{color:var(--navy-950);}
+  .toc-list .ext{float:right; font-size:.78rem; color:var(--slate-500);}
+
+  /* format spec table */
+  table.spec{width:100%; border-collapse:collapse; font-size:.92rem;}
+  table.spec th, table.spec td{padding:11px 14px; border-bottom:1px solid #eee9db; text-align:left; vertical-align:top;}
+  table.spec th{color:var(--slate-500); font-weight:600; font-size:.76rem; text-transform:uppercase; letter-spacing:.05em;}
+  table.spec tr:last-child td{border-bottom:none;}
+
+  /* apa reference cards */
+  .ref-card{
+    background:#fff; border:1px solid #e6e2d6; border-radius:var(--radius); padding:18px 20px; margin-bottom:14px; box-shadow:var(--shadow);
+  }
+  .ref-type{
+    display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
+    background:var(--navy-900); color:#fff; padding:3px 10px; border-radius:100px; margin-bottom:10px;
+  }
+  .ref-formula{color:var(--slate-500); font-size:.82rem; margin-bottom:10px; font-family:'JetBrains Mono',monospace;}
+  .ref-example{
+    background:var(--paper-dim); border-radius:6px; padding:12px 14px; font-size:.94rem; line-height:1.55;
+  }
+  .ref-example .hang{padding-left:1.5em; text-indent:-1.5em;}
+  .ref-example i{font-style:italic;}
+
+  /* citation mechanics table */
+  table.cite{width:100%; border-collapse:collapse; font-size:.92rem;}
+  table.cite th, table.cite td{padding:12px 14px; border-bottom:1px solid #eee9db; text-align:left; vertical-align:top;}
+  table.cite th{color:var(--slate-500); font-weight:600; font-size:.76rem; text-transform:uppercase;}
+  table.cite td code{background:var(--paper-dim); padding:2px 6px; border-radius:4px;}
+
+  /* checklist */
+  .check-group{margin-bottom:26px;}
+  .check-group h4{font-size:.95rem; color:var(--gold-dim); text-transform:uppercase; letter-spacing:.05em; margin-bottom:10px;}
+  .check-item{
+    display:flex; align-items:flex-start; gap:12px; padding:10px 14px; border-radius:8px; cursor:pointer;
+    border:1px solid transparent;
+  }
+  .check-item:hover{background:#fff; border-color:#e6e2d6;}
+  .check-item input{margin-top:4px; width:16px; height:16px; accent-color:var(--teal); flex-shrink:0;}
+  .check-item span{font-size:.94rem; color:var(--ink-soft);}
+  .check-item.checked span{color:var(--slate-500); text-decoration:line-through;}
+  #progress-wrap{
+    background:#fff; border:1px solid #e6e2d6; border-radius:var(--radius); padding:18px 22px; margin-bottom:24px;
+    display:flex; align-items:center; gap:18px; box-shadow:var(--shadow);
+  }
+  #progress-bar-bg{flex:1; height:8px; background:var(--paper-dim); border-radius:100px; overflow:hidden;}
+  #progress-bar{height:100%; background:linear-gradient(90deg,var(--gold-dim),var(--gold)); width:0%; transition:width .3s;}
+  #progress-label{font-size:.85rem; color:var(--slate-500); white-space:nowrap; min-width:90px; text-align:right;}
+
+  /* figure/table demo */
+  .demo-figure{
+    border:1px solid #e6e2d6; border-radius:var(--radius); padding:20px; background:#fff;
+  }
+  .demo-figure .fig-label{font-weight:700; font-size:.9rem; margin-bottom:2px;}
+  .demo-figure .fig-title{font-style:italic; font-size:.9rem; margin-bottom:14px; color:var(--ink-soft);}
+  .bars{display:flex; align-items:flex-end; gap:18px; height:140px; padding:0 6px;}
+  .bar-group{display:flex; flex-direction:column; align-items:center; gap:6px; flex:1;}
+  .bar-pair{display:flex; align-items:flex-end; gap:4px; height:110px;}
+  .bar{width:20px; border-radius:3px 3px 0 0;}
+  .bar.before{background:var(--slate-400);}
+  .bar.after{background:var(--teal);}
+  .bar-group .lab{font-size:.74rem; color:var(--slate-500);}
+  .legend{display:flex; gap:16px; font-size:.78rem; color:var(--slate-500); margin-top:10px;}
+  .legend span{display:inline-flex; align-items:center; gap:6px;}
+  .legend i{width:10px; height:10px; border-radius:2px; display:inline-block;}
+  .fig-note{font-size:.82rem; color:var(--slate-500); margin-top:12px;}
+
+  table.demo-table{width:100%; border-collapse:collapse; font-size:.88rem; margin-top:6px;}
+  table.demo-table caption{text-align:left; caption-side:top; margin-bottom:12px;}
+  table.demo-table th, table.demo-table td{border:1px solid #e0dbc9; padding:8px 10px; text-align:center;}
+  table.demo-table th{background:var(--paper-dim); font-weight:600;}
+
+  /* footer */
+  footer{background:var(--paper-dim); color:var(--ink-soft); padding:30px 0 26px; font-size:.85rem; border-top:2px solid var(--navy-950);}
+  footer .wrap{display:flex; flex-direction:column; gap:6px;}
+  footer img{height:34px; width:auto; margin-bottom:10px;}
+  footer b{color:var(--navy-950);}
+  footer .fine{color:var(--slate-500); font-size:.78rem; margin-top:10px;}
+
+  .backtop{
+    position:fixed; bottom:22px; right:22px; background:var(--navy-950); color:#fff; border:1px solid var(--navy-700);
+    width:42px; height:42px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    text-decoration:none; font-size:1.1rem; opacity:0; pointer-events:none; transition:opacity .2s; box-shadow:var(--shadow);
+  }
+  .backtop.show{opacity:1; pointer-events:auto;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-brand"><img src="assets/logo-utm.png" alt="Universidad Tecnológica de Morelia"><span class="brand-text">Guía de <b>Tesis</b> · MITI</span></span>
+    <a class="navlink" href="#inicio">Inicio</a>
+    <a class="navlink" href="#estructura">Estructura</a>
+    <a class="navlink" href="#formato">Formato</a>
+    <a class="navlink" href="#preliminares">Preliminares</a>
+    <a class="navlink" href="#cap1">Cap. 1</a>
+    <a class="navlink" href="#cap2">Cap. 2</a>
+    <a class="navlink" href="#cap3">Cap. 3</a>
+    <a class="navlink" href="#cap4">Cap. 4</a>
+    <a class="navlink" href="#cap5">Cap. 5</a>
+    <a class="navlink" href="#cap6">Cap. 6</a>
+    <a class="navlink" href="#apa">APA</a>
+    <a class="navlink" href="#cierre">Cierre</a>
+    <a class="navlink" href="#figuras">Figuras/Tablas</a>
+    <a class="navlink" href="#checklist">Checklist</a>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-top">
+      <span class="hero-crumb">Universidad Tecnológica de Morelia · <b>Maestría en Ingeniería Aplicada en la Innovación Tecnológica</b></span>
+      <img class="hero-logo" src="assets/logo-utm.png" alt="Universidad Tecnológica de Morelia">
+    </div>
+
+    <div class="hero-main">
+      <div class="hero-copy">
+        <div class="eyebrow">Guía para la escritura de tesis · versión web</div>
+        <h1>Reporte técnico de tesis para maestría profesionalizante</h1>
+        <p class="lede">Qué debe contener cada apartado según los lineamientos oficiales de la UTM, con ejemplos de contexto —no textos listos para copiar— y una sección dedicada a citación APA 7.ª edición.</p>
+      </div>
+      <div class="hero-stats-inline">
+        <div><div class="n">17</div><div class="l">apartados oficiales</div></div>
+        <div><div class="n">6</div><div class="l">capítulos</div></div>
+        <div><div class="n">APA 7</div><div class="l">citación</div></div>
+        <div><div class="n">4</div><div class="l">niveles de título</div></div>
+      </div>
+    </div>
+
+    <div class="toc-kicker">Ir directo a un apartado</div>
+    <nav class="toc-grid" aria-label="Mapa de contenidos">
+      <a class="toc-card" href="#estructura"><span class="tn">01</span><span><span class="tt">Estructura oficial</span><span class="td">Los 17 apartados, de la a) a la q)</span></span></a>
+      <a class="toc-card" href="#formato"><span class="tn">02</span><span><span class="tt">Formato del documento</span><span class="td">Márgenes, tipografía, niveles de título</span></span></a>
+      <a class="toc-card" href="#preliminares"><span class="tn">03</span><span><span class="tt">Preliminares</span><span class="td">Agradecimientos, resumen, abstract e índices</span></span></a>
+      <a class="toc-card" href="#cap1"><span class="tn">04</span><span><span class="tt">Capítulo 1 · Introducción</span><span class="td">Antecedentes, problema, objetivos, justificación</span></span></a>
+      <a class="toc-card" href="#cap2"><span class="tn">05</span><span><span class="tt">Capítulos 2 y 3</span><span class="td">Marco teórico y metodología (un enlace por capítulo)</span></span></a>
+      <a class="toc-card" href="#cap4"><span class="tn">06</span><span><span class="tt">Capítulos 4, 5 y 6</span><span class="td">Diseño, pruebas y resultados (un enlace por capítulo)</span></span></a>
+      <a class="toc-card" href="#apa"><span class="tn">07</span><span><span class="tt">Citación APA 7</span><span class="td">Mecánica de citas, ejemplo redactado y referencias</span></span></a>
+      <a class="toc-card" href="#cierre"><span class="tn">08</span><span><span class="tt">Cierre del documento</span><span class="td">Conclusiones, recomendaciones y anexos</span></span></a>
+      <a class="toc-card" href="#figuras"><span class="tn">09</span><span><span class="tt">Figuras y tablas</span><span class="td">Numeración, título, nota y ejemplos</span></span></a>
+      <a class="toc-card" href="#checklist"><span class="tn">10</span><span><span class="tt">Checklist final</span><span class="td">Revisión interactiva antes de entregar</span></span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= ESTRUCTURA ================= -->
+<section id="estructura">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">01 · Mapa del documento</div>
+      <h2>Estructura oficial, de la a) a la q)</h2>
+      <p>La guía institucional numera los apartados con incisos únicamente para indicar el orden en que aparecen — <b>esos incisos no se escriben como parte del título</b> dentro del documento final. Este es el orden completo que debe seguir tu reporte técnico.</p>
+    </div>
+
+    <div class="card">
+      <ul class="toc-list">
+        <li><b>Portada</b> — formato institucional, incluye logotipo de la unidad de práctica (U.P.) si aplica.</li>
+        <li><b>Carta de autorización de digitalización</b> — la emite la Subdirección de carrera.</li>
+        <li><b>Agradecimientos</b> — personales, académicos y/o institucionales. <span class="ext">1 cuartilla</span></li>
+        <li><b>Índice general</b> — capítulos y subcapítulos con paginación, con sangrías que muestren el anidamiento por nivel.</li>
+        <li><b>Índice de figuras</b> — listado consecutivo con su paginación.</li>
+        <li><b>Índice de tablas</b> — solo si el documento incluye tablas.</li>
+        <li><b>Resumen</b> — problema, objetivos, metodología y resultados principales. <span class="ext">máx. 250 palabras</span></li>
+        <li><b>Abstract</b> — traducción del resumen, con keywords.</li>
+        <li><b>Capítulo 1. Introducción</b> — antecedentes, planteamiento, propuesta de solución, justificación.</li>
+        <li><b>Capítulo 2. Marco Teórico</b> — encuadre teórico y estado del arte.</li>
+        <li><b>Capítulo 3. Metodología</b> — diseño metodológico y matriz.</li>
+        <li><b>Capítulo 4. Diseño e Implementación</b> — desarrollo de la solución.</li>
+        <li><b>Capítulo 5. Pruebas</b> — evaluación interna y externa de la solución.</li>
+        <li><b>Capítulo 6. Resultados</b> — hallazgos y discusión.</li>
+        <li><b>Conclusiones y recomendaciones</b> — no es un resumen de resultados.</li>
+        <li><b>Fuentes y referencias bibliográficas</b> — formato APA 7.ª edición.</li>
+        <li><b>Anexos</b> — numerados y referenciados en el cuerpo del texto.</li>
+      </ul>
+    </div>
+
+    <div class="gold-box" style="margin-top:20px;">
+      <div class="lab">Diferencia clave frente a un reporte de TSU o Ingeniería</div>
+      Este documento es un <b>reporte técnico de tesis para obtener el grado de maestría</b>: se espera mayor rigor en el marco teórico (capítulo independiente, no solo un apartado), una metodología explícita con instrumentos de medición, y un capítulo de resultados que discuta los hallazgos frente a otros autores — no solo los describa.
+    </div>
+  </div>
+</section>
+
+<section id="formato">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">02 · Especificaciones generales</div>
+      <h2>Formato del documento</h2>
+      <p>Estas reglas se aplican en todo el documento salvo que un apartado indique lo contrario (por ejemplo, la sangría del Resumen).</p>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <table class="spec">
+          <tr><th>Página</th><td>Tamaño carta, orientación vertical.</td></tr>
+          <tr><th>Márgenes</th><td>2.54 cm en los cuatro lados, en todas las páginas.</td></tr>
+          <tr><th>Tipografía</th><td>Times New Roman, tamaño 12 pt — todos los niveles de título incluidos.</td></tr>
+          <tr><th>Interlineado</th><td>2.0 (doble espacio).</td></tr>
+          <tr><th>Párrafos</th><td>Justificado, con sangría de 1.27 cm en la primera línea.</td></tr>
+          <tr><th>Paginación</th><td>Portada e índices no se numeran. La página 1 inicia en el Resumen, número arábigo en la esquina superior derecha, precedido de la palabra "Página".</td></tr>
+          <tr><th>Color</th><td>Cuerpo del texto en tinta negra; color permitido solo en gráficos, fotografías o imágenes que lo requieran.</td></tr>
+          <tr><th>Nombre de archivo</th><td>Matrícula + nombre completo, iniciando con apellido paterno, en formato mayúsculas/minúsculas.</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <h4 style="margin-top:0; font-size:1rem; font-family:'Inter'; color:var(--navy-900);">Niveles de título</h4>
+        <table class="spec">
+          <tr><td><span class="lvl">Nivel 1</span></td><td>Título de capítulo. Centrado, negrita, mayúscula inicial en cada palabra. El texto inicia en un párrafo nuevo.</td></tr>
+          <tr><td><span class="lvl">Nivel 2</span></td><td>Alineado a la izquierda, negrita, mayúscula inicial en cada palabra. Párrafo nuevo.</td></tr>
+          <tr><td><span class="lvl">Nivel 3</span></td><td>Izquierda, negrita, <i>cursiva</i>, mayúscula inicial en cada palabra. Párrafo nuevo.</td></tr>
+          <tr><td><span class="lvl">Nivel 4</span></td><td>Izquierda, negrita, mayúscula inicial, sangría de 1.27 cm, con punto final. El texto continúa <b>en la misma línea</b>.</td></tr>
+        </table>
+        <div class="example" style="margin-top:14px;">
+          <div class="lab">Cómo se ve cada nivel</div>
+          <p style="text-align:center; font-weight:700; margin:0 0 10px;">CAPÍTULO 1. INTRODUCCIÓN</p>
+          <p style="font-weight:700; margin:0 0 10px;">1.1 Antecedentes</p>
+          <p style="font-weight:700; font-style:italic; margin:0 0 10px;">1.3.1 Objetivo General</p>
+          <p style="margin:0; padding-left:20px;"><b>Herramientas de recolección.</b> El texto del párrafo continúa aquí mismo, sin salto de línea…</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="preliminares">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">03 · Páginas preliminares</div>
+      <h2>De la portada al abstract</h2>
+      <p>Se escriben al final, pero se colocan al inicio del documento. No numeres estas páginas hasta llegar al Resumen.</p>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">§</span><h3>Agradecimientos</h3><span class="tag">1 cuartilla</span></div>
+      <div class="chapter-body">
+        <p>Personales, académicos y/o institucionales. Se firma con tu nombre completo al final.</p>
+        <div class="example"><div class="lab">Contexto, no plantilla</div>Agradece a quien realmente te acompañó en el proceso: tu asesor externo en la organización, tu asesor universitario, y las personas que hicieron posible el proyecto de innovación tecnológica. Evita fórmulas genéricas copiadas de otros reportes.</div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">§</span><h3>Resumen y Abstract</h3><span class="tag">máx. 250 palabras · 1 cuartilla c/u</span></div>
+      <div class="chapter-body">
+        <p>A renglón seguido (sin viñetas). La <b>primera línea va al ras, sin sangría</b> — es la única excepción a la regla general de sangría. Debe cubrir, en este orden: planteamiento del problema, objetivos, metodología y principales resultados. Cierra con 3 a 5 palabras clave. El Abstract es la traducción fiel al inglés, con sus keywords.</p>
+        <div class="example">
+          <div class="lab">Estructura interna del resumen (ejemplo de andamiaje, con tema de innovación en gestión de TI)</div>
+          <p style="margin:0;"><b>[Problema, 1–2 frases]</b> Las áreas de tecnologías de la información de organizaciones con operación distribuida enfrentan dificultades para atender incidencias y solicitudes de servicio de manera oportuna y estandarizada. <b>[Objetivo]</b> El presente trabajo tuvo como objetivo implementar una plataforma de gestión de servicios de TI basada en el marco ITIL… <b>[Metodología]</b> Se empleó un diseño de estudio de caso con medición de indicadores antes y después de la implementación… <b>[Resultados]</b> Los resultados muestran una reducción del X % en el tiempo promedio de atención…</p>
+          <p style="margin-top:10px; color:var(--slate-500);"><b>Palabras clave:</b> gestión de servicios de TI, ITIL, transformación digital, mesa de servicio.</p>
+        </div>
+        <div class="warn"><div class="lab">Error frecuente</div>El resumen no es la introducción abreviada ni una lista de temas ("en este trabajo se hablará de…"). Debe poder leerse de forma independiente y dar una idea completa del proyecto en unos cuantos párrafos.</div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">§</span><h3>Índices general, de figuras y de tablas</h3></div>
+      <div class="chapter-body">
+        <p>El índice de tablas solo se incluye si tu documento tiene tablas. Usa sangrías que reflejen el nivel del título (capítulo, subcapítulo, sub-subcapítulo).</p>
+        <h4>Formato de una figura referenciada en el índice</h4>
+        <ul>
+          <li>Número de figura en <b>negrita</b>, en orden consecutivo de aparición.</li>
+          <li>Título de la figura en <i>cursiva</i>, debajo del número.</li>
+          <li>Una nota debajo de la figura con lo que el título no explica por sí solo, y los derechos de autor ("Elaboración propia" o la fuente original).</li>
+        </ul>
+        <p>El mismo esquema aplica a las tablas: número en negrita, título breve y descriptivo en cursiva con interlineado doble, encabezados de columna centrados y nota opcional al pie. Revisa ejemplos completos en la sección <a href="#figuras" style="color:var(--teal); font-weight:600;">Figuras y Tablas</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cap1">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">04 · Capítulo 1</div>
+      <h2>Introducción</h2>
+      <p>Muestra el problema que aborda la tesis, su justificación y el contenido general de los capítulos. Es donde sustentas la relevancia social, científica y/o tecnológica del proyecto. <span class="mono" style="color:var(--slate-500);">≈ 1 cuartilla el apartado introductorio</span></p>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">1.1</span><h3>Antecedentes</h3></div>
+      <div class="chapter-body">
+        <p>Contextualiza dónde se sitúa el problema: hechos pasados, estudios científicos y/o tecnológicos —clásicos y actuales— relacionados con el problema específico de tu tesis.</p>
+        <div class="example">
+          <div class="lab">Ejemplo de arranque (tema: gestión de servicios de TI)</div>
+          En la actualidad, el uso de marcos de referencia para la gestión de servicios tecnológicos se ha vuelto una necesidad estratégica para las organizaciones con operación distribuida. Entre los más reconocidos se encuentra ITIL (AXELOS, 2019), que ofrece un conjunto de buenas prácticas para la gestión de incidencias, cambios y activos tecnológicos. De manera complementaria, la norma ISO/IEC 20000-1:2018 establece los requisitos formales para un sistema de gestión de servicios de TI (International Organization for Standardization [ISO], 2018)…
+        </div>
+        <div class="warn"><div class="lab">No es lo mismo que el Marco Teórico</div>Los Antecedentes sitúan el problema en el tiempo y presentan trabajos previos de forma breve; el Marco Teórico (Capítulo 2) desarrolla en profundidad las teorías y conceptos que sustentan tu propuesta.</div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">1.2</span><h3>Planteamiento del problema</h3></div>
+      <div class="chapter-body">
+        <p>Describe con el mayor detalle posible la problemática que da origen al tema de tesis. Después, explica de forma ordenada y congruente cómo se relaciona con el objetivo general y los objetivos específicos, respondiendo a la(s) pregunta(s) de investigación que la originan.</p>
+        <div class="example">
+          <div class="lab">Idea de estructura</div>
+          Describe el síntoma observable → identifica su causa raíz → explica sus consecuencias para la organización o el área → enuncia la pregunta de investigación que se desprende de ello. Evita mezclar aquí la solución propuesta; eso corresponde al siguiente apartado.
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">1.3</span><h3>Propuesta de solución</h3></div>
+      <div class="chapter-body">
+        <p>Describe, de forma clara, concreta, medible y alcanzable, la situación que se resolvió. Se divide en Objetivo General y Objetivos Específicos.</p>
+
+        <div class="sub">
+          <h5>1.3.1 Objetivo General</h5>
+          <p>Se redacta como un solo párrafo que combina: <b>verbo en infinitivo + objeto + indicador + condición + tiempo</b>.</p>
+          <div class="gold-box">
+            <div class="lab">Ejemplo oficial de la guía UTM</div>
+            "Desarrollar <span style="color:#9c3b3b;">un sitio web</span> para <span style="color:var(--teal);">la comercialización de productos lácteos</span>, en <span style="color:var(--gold-dim);">aproximadamente un año</span>."
+          </div>
+          <div class="example">
+            <div class="lab">Ejemplo adaptado (tema: innovación en gestión de TI)</div>
+            "Implementar <span style="color:#9c3b3b;">una plataforma de gestión de servicios de TI basada en el marco ITIL</span> para <span style="color:var(--teal);">reducir el tiempo de atención a incidencias en la organización</span>, en un periodo de <span style="color:var(--gold-dim);">ocho meses</span>."
+          </div>
+        </div>
+
+        <div class="sub">
+          <h5>1.3.2 Objetivos Específicos</h5>
+          <p>Se enlistan de forma jerarquizada, siguiendo la misma estructura del Objetivo General, y en conjunto deben poder "armar" el objetivo general.</p>
+          <div class="example">
+            <div class="lab">Ejemplo (continúa el objetivo general anterior)</div>
+            <ol style="margin:0; padding-left:18px;">
+              <li>Diagnosticar los procesos actuales de gestión de incidencias mediante un análisis de brechas frente a las mejores prácticas de ITIL, durante el primer mes del proyecto.</li>
+              <li>Diseñar los flujos de trabajo y el catálogo de servicios de la plataforma, alineados a los procesos priorizados, en el segundo y tercer mes.</li>
+              <li>Evaluar el impacto de la implementación en los tiempos de resolución y en la satisfacción de los usuarios mediante indicadores antes y después, al cierre del proyecto.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">1.4</span><h3>Justificación</h3></div>
+      <div class="chapter-body">
+        <p>Expón las razones por las que se aborda el problema, considerando trascendencia, vulnerabilidad, magnitud y factibilidad. La guía plantea cuatro preguntas para orientar la redacción — <b>respóndelas dentro del texto corrido, sin escribirlas como preguntas literales</b>:</p>
+        <ul>
+          <li>¿Qué elementos llevaron a seleccionar el proyecto?</li>
+          <li>¿En qué medida el proyecto ofrecerá mejoras a la organización o sociedad?</li>
+          <li>¿Por qué se hace el proyecto, en este momento y en este contexto?</li>
+          <li>¿Cuáles serán sus aportes concretos?</li>
+        </ul>
+        <div class="warn"><div class="lab">Error frecuente</div>Copiar las cuatro preguntas tal cual en el documento ("¿Qué elementos…?"). La guía es explícita: se usan para guiar la redacción, no se transcriben.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cap2">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">05 · Capítulo 2</div>
+      <h2>Marco Teórico</h2>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">02</span><h3>Marco Teórico</h3></div>
+      <div class="chapter-body">
+        <p>Encuadra el problema dentro de límites teóricos y da el punto de partida para orientar tu investigación: teorías relacionadas, estudios previos, problemas relacionados, resultados obtenidos por otros y la situación actual del tema. <b>Es el capítulo donde el manejo correcto de citas APA es más revisado.</b></p>
+        <div class="example">
+          <div class="lab">Cómo se organiza (no como lista de definiciones sueltas)</div>
+          Agrupa por subtemas relevantes a tu proyecto —por ejemplo: <i>2.1 Gestión de servicios de TI</i>, <i>2.2 El marco ITIL</i>, <i>2.3 Modelos de madurez en TI</i>, <i>2.4 Transformación digital en organizaciones</i>— y dentro de cada uno, compara posturas de distintos autores en vez de solo enumerarlas una tras otra.
+        </div>
+        <div class="warn"><div class="lab">Error frecuente</div>Un marco teórico que es una sucesión de citas pegadas sin análisis ("Según A (2019)… Según B (2020)… Según C (2021)…"). Se espera que relaciones, compares y saques tu propia lectura de esas fuentes.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cap3">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">06 · Capítulo 3</div>
+      <h2>Metodología</h2>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">03</span><h3>Metodología</h3></div>
+      <div class="chapter-body">
+        <p>Describe los aspectos metodológicos aplicados: características de la muestra, cómo se seleccionó, quiénes participaron, tipo de institución, y todo lo necesario para que el lector entienda con claridad el proceso de investigación. La guía recomienda de forma explícita incluir una <b>matriz metodológica</b> que haga congruentes tus variables con tus instrumentos de medición.</p>
+        <div class="example">
+          <div class="lab">Ejemplo de matriz metodológica (estructura, no la tuya)</div>
+          <table class="demo-table">
+            <tr><th>Objetivo específico</th><th>Variable</th><th>Indicador</th><th>Instrumento</th><th>Fuente</th></tr>
+            <tr><td>Diagnosticar procesos actuales</td><td>Madurez del proceso</td><td>Nivel en escala ITIL (1–5)</td><td>Cuestionario de autoevaluación</td><td>Personal de mesa de servicio</td></tr>
+            <tr><td>Evaluar impacto de la implementación</td><td>Tiempo de resolución</td><td>Horas promedio por ticket</td><td>Reporte del sistema de tickets</td><td>Base de datos de la plataforma</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cap4">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">07 · Capítulo 4</div>
+      <h2>Diseño e Implementación</h2>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">04</span><h3>Diseño e Implementación</h3></div>
+      <div class="chapter-body">
+        <p><b>Texto oficial de la guía UTM:</b> "Se debe abordar ampliamente, basándose en las especificaciones de los requerimientos, describir de forma clara los métodos, técnicas, procedimientos y demás herramientas utilizadas para el desarrollo y funcionamiento de la solución que atiende el tema de tesis."</p>
+        <div class="example">
+          <div class="lab">Ejemplo de contenido (tema: plataforma de gestión de servicios de TI)</div>
+          Por ejemplo: el catálogo de servicios diseñado, el flujo de escalamiento de incidencias entre niveles de soporte, la integración con el directorio de usuarios de la organización, y la justificación de elegir una herramienta ITSM comercial en vez de desarrollar una a la medida.
+        </div>
+        <div class="gold-box">
+          <div class="lab">Importante: esto no es una lista oficial de la guía UTM</div>
+          La guía no detalla subtemas fijos para este capítulo, solo pide describir con claridad los métodos, técnicas, procedimientos y herramientas de tu solución. Estos puntos son prácticas comunes en proyectos de ingeniería para cumplir con eso — adáptalos a lo que tu propio proyecto realmente necesite documentar, no los copies como checklist obligatorio:
+          <ul style="margin:8px 0 0;">
+            <li>Requerimientos funcionales y no funcionales.</li>
+            <li>Arquitectura de la solución (diagramas de flujo, UML, de red o de arquitectura, según el proyecto).</li>
+            <li>Justificación técnica de las herramientas o tecnologías elegidas, no solo su listado.</li>
+            <li>Decisiones de diseño relevantes y las alternativas que se descartaron.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cap5">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">08 · Capítulo 5</div>
+      <h2>Pruebas</h2>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">05</span><h3>Pruebas</h3></div>
+      <div class="chapter-body">
+        <p>Evidencia todas las pruebas realizadas para la evaluación interna y externa de tu implementación, demostrando congruencia con los objetivos planteados en el Capítulo 1.</p>
+        <div class="example">
+          <div class="lab">Ejemplo de tabla de caso de prueba</div>
+          <table class="demo-table">
+            <tr><th>ID</th><th>Escenario</th><th>Resultado esperado</th><th>Resultado obtenido</th><th>Estatus</th></tr>
+            <tr><td>CP-01</td><td>Registro de un nuevo ticket de incidencia</td><td>El ticket se crea y se asigna automáticamente</td><td>Conforme a lo esperado</td><td>Aprobado</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cap6">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">09 · Capítulo 6</div>
+      <h2>Resultados</h2>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">06</span><h3>Resultados</h3></div>
+      <div class="chapter-body">
+        <p><b>Texto oficial de la guía UTM:</b> "Este es el apartado medular de la tesis pues es aquí donde se muestran los hallazgos. Los datos deben presentarse de manera organizada de tal forma que facilite la comprensión de estos. […] Deben de estar identificados con número y título. La discusión consiste en la interpretación de los resultados comparándolos con los de otros autores o explicándolos a partir de la fundamentación teórica." <b>Las figuras y tablas se integran dentro del texto — no se colocan como un apartado aparte.</b></p>
+
+        <div class="gold-box">
+          <div class="lab">Guía práctica para investigación cuantitativa (no es texto literal de la UTM)</div>
+          La guía no exige un formato estadístico específico, pero en una maestría en ingeniería con datos cuantitativos se espera algo más que promedios sueltos. Un Capítulo 6 sólido normalmente combina tres niveles de análisis:
+          <ol style="margin:8px 0 0; padding-left:18px;">
+            <li><b>Estadística descriptiva</b> — cómo se ven tus datos (media, dispersión, tamaño de muestra).</li>
+            <li><b>Comparación o prueba de hipótesis</b> — si el cambio que observaste es estadísticamente significativo o pudo deberse al azar.</li>
+            <li><b>Correlación</b> — si dos variables de tu estudio se relacionan entre sí, y con qué fuerza.</li>
+          </ol>
+        </div>
+
+        <div class="sub">
+          <h5>1. Estadística descriptiva</h5>
+          <p>Nunca reportes solo el promedio: acompáñalo siempre de la dispersión (desviación estándar) y el tamaño de muestra —sin eso, un promedio no dice si tus datos son consistentes o muy variables.</p>
+          <div class="example">
+            <div class="lab">Ejemplo de tabla descriptiva</div>
+            <table class="demo-table">
+              <tr><th>Indicador</th><th>n</th><th>M antes</th><th>DE antes</th><th>M después</th><th>DE después</th></tr>
+              <tr><td>Prioridad alta (h)</td><td>40</td><td>5.8</td><td>1.2</td><td>2.1</td><td>0.6</td></tr>
+              <tr><td>Prioridad media (h)</td><td>40</td><td>4.1</td><td>0.9</td><td>1.8</td><td>0.5</td></tr>
+            </table>
+            <p style="margin:10px 0 0; font-size:.85rem; color:var(--slate-500);"><i>Nota:</i> M = media; DE = desviación estándar; n = número de tickets analizados por grupo. Elaboración propia.</p>
+          </div>
+        </div>
+
+        <div class="sub">
+          <h5>2. Comparación antes/después (prueba de hipótesis)</h5>
+          <p>Cuando mides al <b>mismo grupo</b> en dos momentos (antes y después de tu implementación), usa una prueba para <b>muestras relacionadas</b>: t de Student pareada si tus datos se distribuyen de forma normal, o la prueba de Wilcoxon si no cumplen ese supuesto.</p>
+          <div class="example">
+            <div class="lab">Ejemplo de redacción</div>
+            "Para determinar si la reducción en el tiempo de resolución fue estadísticamente significativa, se aplicó una prueba <i>t</i> de Student para muestras relacionadas, dado que se comparó al mismo grupo de tickets antes y después de la implementación. Los resultados mostraron una diferencia significativa (<i>t</i>(39) = 8.42, <i>p</i> &lt; .001), con un tamaño del efecto grande (<i>d</i> de Cohen = 1.35), lo que indica que la reducción observada difícilmente se debió al azar."
+          </div>
+          <p style="margin:0; font-size:.88rem; color:var(--slate-500);">Reporta siempre: el estadístico de prueba, los grados de libertad o <span class="mono">n</span>, el valor <i>p</i> y, de ser posible, el tamaño del efecto — un resultado "significativo" sin tamaño del efecto no dice qué tan grande fue el cambio en la práctica.</p>
+        </div>
+
+        <div class="sub">
+          <h5>3. Correlación entre variables</h5>
+          <p>Úsala cuando tu pregunta es si dos variables <b>se relacionan</b> entre sí (no si una "antes" cambió a un "después"). Usa <i>r</i> de Pearson para variables continuas con distribución normal, o <i>rho</i> de Spearman si son ordinales o no cumplen ese supuesto.</p>
+          <div class="grid grid-2" style="margin-top:10px;">
+            <div class="example">
+              <div class="lab">Ejemplo de redacción</div>
+              "Se analizó la relación entre el nivel de automatización de los procesos (escala 1–5) y el tiempo de resolución de incidencias. Se encontró una correlación negativa, moderada y estadísticamente significativa (<i>r</i> = -.52, <i>p</i> = .003, <i>n</i> = 40): a mayor nivel de automatización, menor tiempo de resolución — resultado consistente con lo planteado por Rogers (2003) sobre la relación entre adopción tecnológica y eficiencia operativa."
+              <div class="demo-figure" style="margin-top:12px; padding:14px; box-shadow:none;">
+                <div class="fig-label" style="font-size:.8rem;">Figura</div>
+                <div class="fig-title" style="font-size:.8rem;">Relación entre nivel de automatización y tiempo de resolución.</div>
+                <svg viewBox="0 0 300 170" style="width:100%; max-width:340px; height:auto; display:block; margin:0 auto;">
+                  <line x1="40" y1="150" x2="280" y2="150" style="stroke:var(--slate-400); stroke-width:1.2"/>
+                  <line x1="40" y1="10" x2="40" y2="150" style="stroke:var(--slate-400); stroke-width:1.2"/>
+                  <line x1="42" y1="28" x2="272" y2="138" style="stroke:var(--gold-dim); stroke-width:2; stroke-dasharray:4 3"/>
+                  <circle cx="55" cy="35" r="3.6" style="fill:var(--teal)"/>
+                  <circle cx="70" cy="48" r="3.6" style="fill:var(--teal)"/>
+                  <circle cx="90" cy="38" r="3.6" style="fill:var(--teal)"/>
+                  <circle cx="100" cy="60" r="3.6" style="fill:var(--teal)"/>
+                  <circle cx="125" cy="65" r="3.6" style="fill:var(--teal)"/>
+                  <circle cx="140" cy="55" r="3.6" style="fill:var(--teal)"/>
+                  <circle cx="155" cy="80" r="3.6" style="fill:var(--teal)"/>
+                  <circle cx="175" cy="90" r="3.6" style="fill:var(--teal)"/>
+                  <circle cx="195" cy="78" r="3.6" style="fill:var(--teal)"/>
+                  <circle cx="210" cy="105" r="3.6" style="fill:var(--teal)"/>
+                  <circle cx="230" cy="115" r="3.6" style="fill:var(--teal)"/>
+                  <circle cx="250" cy="100" r="3.6" style="fill:var(--teal)"/>
+                  <circle cx="265" cy="130" r="3.6" style="fill:var(--teal)"/>
+                  <text x="160" y="166" text-anchor="middle" style="font-size:9px; fill:var(--slate-500); font-family:'Inter',sans-serif;">Nivel de automatización (1–5)</text>
+                  <text x="12" y="80" text-anchor="middle" transform="rotate(-90 12 80)" style="font-size:9px; fill:var(--slate-500); font-family:'Inter',sans-serif;">Tiempo de resolución (h)</text>
+                </svg>
+                <div class="fig-note" style="margin-top:6px;"><i>Nota:</i> cada punto representa un ticket; la línea punteada es la tendencia. Elaboración propia.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div style="font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; font-weight:700; color:var(--slate-500); margin-bottom:8px;">Cómo interpretar el valor de <i>r</i></div>
+              <table class="spec">
+                <tr><td><span class="mono">|r| ≈ .10</span></td><td>Relación débil</td></tr>
+                <tr><td><span class="mono">|r| ≈ .30</span></td><td>Relación moderada</td></tr>
+                <tr><td><span class="mono">|r| ≈ .50</span></td><td>Moderada a fuerte</td></tr>
+                <tr><td><span class="mono">|r| ≥ .70</span></td><td>Relación fuerte</td></tr>
+              </table>
+              <p style="margin:10px 0 0; font-size:.82rem; color:var(--slate-500);">Convención de Cohen (1988). El signo indica dirección (+ directa, − inversa); el valor absoluto indica fuerza — nunca indica causalidad.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub">
+          <h5>4. Cómo elegir la prueba correcta</h5>
+          <table class="cite">
+            <tr><th>Tu pregunta es…</th><th>Prueba sugerida</th></tr>
+            <tr><td>¿Cambió X antes y después de la implementación, en el mismo grupo?</td><td><span class="mono">t</span> pareada (o Wilcoxon si no hay normalidad)</td></tr>
+            <tr><td>¿X se relaciona con Y?</td><td>Correlación de Pearson (o Spearman)</td></tr>
+            <tr><td>¿Hay diferencia entre dos grupos independientes (p. ej. sede A vs. sede B)?</td><td><span class="mono">t</span> independiente (o U de Mann-Whitney)</td></tr>
+            <tr><td>¿Hay diferencia entre tres o más grupos?</td><td>ANOVA (o Kruskal-Wallis)</td></tr>
+          </table>
+        </div>
+
+        <div class="warn">
+          <div class="lab">Errores frecuentes con datos cuantitativos</div>
+          <ul style="margin:0;">
+            <li>Reportar solo el promedio, sin desviación estándar ni tamaño de muestra (<span class="mono">n</span>).</li>
+            <li>Confundir correlación con causalidad ("como <i>r</i> es alta, X causa Y" — una correlación no prueba causa-efecto por sí sola).</li>
+            <li>No mencionar qué prueba estadística se usó ni por qué se eligió esa y no otra.</li>
+            <li>Reportar el valor <i>p</i> sin el tamaño del efecto — un resultado puede ser "significativo" y aun así tener poco impacto práctico.</li>
+            <li>Presentar la figura o tabla sin discutirla ("la Figura 3 muestra que el tiempo bajó de 6 a 2 horas", punto). La guía pide ir más allá: ¿ese resultado confirma o contradice lo que plantean tus referencias del Capítulo 2? ¿Por qué crees que ocurrió?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="apa">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">10 · La sección con más dudas</div>
+      <h2>Citación y referencias en APA 7.ª edición</h2>
+      <p>La guía UTM exige que tu lista de referencias siga el formato APA 7.ª edición. Aquí tienes la mecánica de la citación en el texto y ejemplos reales de entradas en la lista de referencias, agrupados por tipo de fuente.</p>
+    </div>
+
+    <div class="ok-box" style="margin-bottom:24px;">
+      <div class="lab">La regla que nunca se rompe</div>
+      Todo lo que cites en el texto debe tener su entrada correspondiente en la lista de referencias, y toda entrada de la lista debe estar citada al menos una vez en el texto. Sin excepciones.
+    </div>
+
+    <div class="card" style="margin-bottom:28px; border-left:4px solid var(--teal);">
+      <div class="lab" style="font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; color:var(--teal); margin-bottom:10px;">Así se ve una cita dentro de una oración real</div>
+      <p style="margin:0 0 14px; color:var(--ink-soft);">Antes de ir a la tabla completa, mira estos dos ejemplos redactados —la misma idea, citada de dos formas válidas—:</p>
+      <p style="margin:0 0 10px; padding:10px 14px; background:var(--paper-dim); border-radius:6px;"><b>Narrativa:</b> "Como lo señala <span style="color:var(--teal); font-weight:700;">Solórzano (2026)</span>, la correcta gestión de los servicios de TI mejora la satisfacción del usuario final cuando los procesos críticos están documentados y automatizados."</p>
+      <p style="margin:0 0 14px; padding:10px 14px; background:var(--paper-dim); border-radius:6px;"><b>Parentética:</b> "La automatización de los procesos críticos mejora directamente la satisfacción del usuario final <span style="color:var(--teal); font-weight:700;">(Solórzano, 2026)</span>."</p>
+      <p style="margin:0; color:var(--ink-soft); font-size:.92rem;"><b>Solórzano</b> es el apellido del autor de la fuente y <b>2026</b> el año de su publicación — ambos datos deben coincidir exactamente con la entrada correspondiente en tu lista de referencias (por ejemplo: <span class="mono">Solórzano Salgado, P. (2026). ...</span>). Nota que "Solórzano" nunca lleva cursiva ni comillas: solo el título de la obra citada las lleva, en la lista de referencias.</p>
+    </div>
+
+    <h3 style="font-size:1.15rem; margin-bottom:14px;">Cómo citar dentro del texto</h3>
+    <div class="card" style="margin-bottom:28px;">
+      <table class="cite">
+        <tr><th>Caso</th><th>Formato</th><th>Ejemplo</th></tr>
+        <tr><td>Cita narrativa (el autor es parte de la oración)</td><td><code>Autor (año)</code></td><td>Rogers (2003) plantea que la adopción de una innovación sigue un proceso gradual…</td></tr>
+        <tr><td>Cita parentética</td><td><code>(Autor, año)</code></td><td>…la adopción de una innovación sigue un proceso gradual (Rogers, 2003).</td></tr>
+        <tr><td>Dos autores</td><td><code>(Autor1 y Autor2, año)</code></td><td>(García y Martínez, 2021)</td></tr>
+        <tr><td>Tres o más autores</td><td><code>(Autor1 et al., año)</code></td><td>(Pérez et al., 2022) — desde la primera cita.</td></tr>
+        <tr><td>Autor corporativo, primera mención</td><td><code>(Nombre completo [SIGLA], año)</code></td><td>(International Organization for Standardization [ISO], 2018)</td></tr>
+        <tr><td>Autor corporativo, siguientes menciones</td><td><code>(SIGLA, año)</code></td><td>(ISO, 2018)</td></tr>
+        <tr><td>Cita textual corta (&lt; 40 palabras)</td><td><code>"…" (Autor, año, p. X)</code></td><td>Como señala García (2021), la estandarización "reduce la variabilidad del servicio percibido por el usuario final" (p. 45).</td></tr>
+        <tr><td>Cita textual larga (≥ 40 palabras)</td><td>bloque con sangría, sin comillas</td><td>Ver ejemplo debajo.</td></tr>
+        <tr><td>Fuente citada dentro de otra fuente</td><td><code>(Autor original, año, como se citó en Autor que lo cita, año)</code></td><td>(Kotter, 1996, como se citó en Gómez, 2020)</td></tr>
+        <tr><td>Varias fuentes en un mismo paréntesis</td><td>orden alfabético, separadas por punto y coma</td><td>(AXELOS, 2019; ISO, 2018; Rogers, 2003)</td></tr>
+      </table>
+    </div>
+
+    <div class="grid grid-2" style="margin-bottom:28px;">
+      <div class="example">
+        <div class="lab">Ejemplo de cita textual larga (bloque)</div>
+        <p style="margin:0 0 8px;">Se separa del párrafo, sin comillas, con sangría de bloque a todo el pasaje:</p>
+        <blockquote style="margin:0; padding-left:18px; border-left:2px solid var(--teal); font-size:.93rem; color:var(--ink-soft);">
+          La gestión eficiente de los servicios tecnológicos en una organización se convierte en un factor estratégico que permite responder de manera oportuna a las necesidades de los usuarios y contribuir al cumplimiento de los objetivos institucionales, especialmente en contextos de operación distribuida. (García, 2021, p. 12)
+        </blockquote>
+      </div>
+      <div class="warn">
+        <div class="lab">Error frecuente</div>
+        Usar comillas <b>y</b> sangría de bloque al mismo tiempo, o citar por autor y año sin indicar página en una cita textual. Las citas textuales —cortas o largas— siempre requieren el número de página.
+      </div>
+    </div>
+
+    <h3 style="font-size:1.15rem; margin-bottom:14px;">Lista de referencias: ejemplos por tipo de fuente</h3>
+    <p style="color:var(--ink-soft); max-width:70ch; margin-bottom:18px;">Orden alfabético por apellido del autor, sangría francesa (la segunda línea y siguientes se sangran), interlineado doble como el resto del documento. Los ejemplos siguientes corresponden a fuentes reales y publicadas — puedes usarlos para verificar el formato exacto, no como referencias de tu propia tesis.</p>
+
+    <div class="grid grid-2">
+      <div class="ref-card">
+        <span class="ref-type">Libro</span>
+        <div class="ref-formula">Apellido, A. A. (año). <i>Título en cursiva</i> (edición). Editorial.</div>
+        <div class="ref-example hang">Rogers, E. M. (2003). <i>Diffusion of innovations</i> (5.ª ed.). Free Press.</div>
+      </div>
+      <div class="ref-card">
+        <span class="ref-type">Autor corporativo / manual técnico</span>
+        <div class="ref-formula">Organización. (año). <i>Título en cursiva</i>. Editorial.</div>
+        <div class="ref-example hang">AXELOS. (2019). <i>ITIL foundation: ITIL 4 edition</i>. TSO.</div>
+      </div>
+      <div class="ref-card">
+        <span class="ref-type">Norma o estándar técnico</span>
+        <div class="ref-formula">Organización. (año). <i>Título de la norma</i> (identificador).</div>
+        <div class="ref-example hang">International Organization for Standardization. (2018). <i>Information technology — Service management — Part 1: Service management system requirements</i> (ISO/IEC 20000-1:2018).</div>
+      </div>
+      <div class="ref-card">
+        <span class="ref-type">Artículo de revista con DOI</span>
+        <div class="ref-formula">Apellido, A. A. (año). Título del artículo. <i>Revista, vol</i>(núm), pp. https://doi.org/xxxx</div>
+        <div class="ref-example hang">Vial, G. (2019). Understanding digital transformation: A review and a research agenda. <i>The Journal of Strategic Information Systems, 28</i>(2), 118–144. https://doi.org/10.1016/j.jsis.2019.01.003</div>
+      </div>
+      <div class="ref-card">
+        <span class="ref-type">Página web / institucional</span>
+        <div class="ref-formula">Organización. (año, día mes). <i>Título de la página</i>. Sitio web. URL</div>
+        <div class="ref-example hang">Project Management Institute. (2021, 10 de diciembre). <i>What is project management?</i> PMI. https://www.pmi.org/about/learn-about-pmi/what-is-project-management</div>
+      </div>
+      <div class="ref-card">
+        <span class="ref-type">Tesis o trabajo de grado</span>
+        <div class="ref-formula">Apellido, A. A. (año). <i>Título del trabajo</i> [Tesis de maestría, Institución].</div>
+        <div class="ref-example hang">Apellido, A. A. (2026). <i>Título del reporte técnico de tesis</i> [Tesis de maestría, Universidad Tecnológica de Morelia].</div>
+      </div>
+    </div>
+
+    <div class="warn" style="margin-top:24px;">
+      <div class="lab">Antes de entregar, revisa esto</div>
+      <ul style="margin:0;">
+        <li>¿Cada cita en el texto tiene su entrada en la lista de referencias, con el mismo año?</li>
+        <li>¿Ordenaste la lista alfabéticamente por apellido, no por orden de aparición en el texto?</li>
+        <li>¿Los títulos de libros/informes/tesis están en cursiva y solo la primera palabra (y nombres propios) con mayúscula?</li>
+        <li>¿Evitaste mezclar APA con otro estilo de citación (numérico, Vancouver, notas al pie)?</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="cierre">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">11 · Cierre del documento</div>
+      <h2>Conclusiones, recomendaciones y anexos</h2>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">§</span><h3>Conclusiones y Recomendaciones</h3></div>
+      <div class="chapter-body">
+        <p>Presentan el conocimiento generado en la tesis, de forma explícita y clara, y deben ser congruentes con los objetivos y/o preguntas de investigación.</p>
+        <div class="warn"><div class="lab">La regla más incumplida de este apartado</div>"Este apartado <b>no</b> es un resumen de resultados." — no repitas cifras del Capítulo 6; enuncia qué aprendiste, qué implica y qué recomiendas a partir de eso.</div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head"><span class="chapter-num">§</span><h3>Anexos</h3></div>
+      <div class="chapter-body">
+        <p>Solo si son necesarios. Deben estar numerados y referenciados en algún punto del cuerpo del texto (por ejemplo: "ver Anexo 2"). Un anexo que nadie referencia en el texto no debería estar ahí.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="figuras">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">12 · Formato visual</div>
+      <h2>Figuras y tablas</h2>
+      <p>Ambas siguen el mismo principio: numeración consecutiva en negrita, título breve en cursiva, y una nota que aclare lo que el título no puede explicar por sí solo — incluyendo derechos de autor.</p>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="demo-figure">
+        <div class="fig-label">Figura 1</div>
+        <div class="fig-title">Tiempo promedio de resolución de incidencias, antes y después de la implementación.</div>
+        <div class="bars">
+          <div class="bar-group">
+            <div class="bar-pair"><div class="bar before" style="height:100px;"></div><div class="bar after" style="height:38px;"></div></div>
+            <div class="lab">Prioridad alta</div>
+          </div>
+          <div class="bar-group">
+            <div class="bar-pair"><div class="bar before" style="height:70px;"></div><div class="bar after" style="height:30px;"></div></div>
+            <div class="lab">Prioridad media</div>
+          </div>
+          <div class="bar-group">
+            <div class="bar-pair"><div class="bar before" style="height:50px;"></div><div class="bar after" style="height:20px;"></div></div>
+            <div class="lab">Prioridad baja</div>
+          </div>
+        </div>
+        <div class="legend"><span><i style="background:var(--slate-400);"></i>Antes</span><span><i style="background:var(--teal);"></i>Después</span></div>
+        <div class="fig-note"><i>Nota:</i> Datos en horas promedio por ticket, sobre una muestra de 120 incidencias por periodo. Elaboración propia.</div>
+      </div>
+
+      <div class="demo-figure">
+        <div class="fig-label">Tabla 1</div>
+        <div class="fig-title">Comparación de procesos ITIL antes y después de la implementación.</div>
+        <table class="demo-table">
+          <tr><th>Proceso</th><th>Nivel de madurez inicial</th><th>Nivel de madurez final</th></tr>
+          <tr><td>Gestión de incidencias</td><td>2</td><td>4</td></tr>
+          <tr><td>Gestión de cambios</td><td>1</td><td>3</td></tr>
+          <tr><td>Gestión de activos</td><td>2</td><td>4</td></tr>
+        </table>
+        <div class="fig-note"><i>Nota:</i> Escala de madurez de 1 (inicial) a 5 (optimizado), evaluada mediante el instrumento descrito en el Capítulo 3. Elaboración propia.</div>
+      </div>
+    </div>
+
+    <div class="ok-box" style="margin-top:20px;">
+      <div class="lab">Recuerda</div>
+      En el Capítulo 6 (Resultados), las figuras y tablas se integran dentro del texto en el punto donde se explican — nunca en un apartado separado al final del capítulo.
+    </div>
+  </div>
+</section>
+
+<section id="checklist">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">13 · Antes de entregar</div>
+      <h2>Checklist de revisión final</h2>
+      <p>Interactivo: tu progreso se guarda en este navegador, en este equipo.</p>
+    </div>
+
+    <div id="progress-wrap">
+      <span style="font-size:.85rem; color:var(--slate-500); white-space:nowrap;">Avance</span>
+      <div id="progress-bar-bg"><div id="progress-bar"></div></div>
+      <span id="progress-label">0 / 0</span>
+    </div>
+
+    <div class="check-group">
+      <h4>Formato general</h4>
+      <label class="check-item"><input type="checkbox" data-id="f1"><span>Times New Roman 12 pt, interlineado 2.0, márgenes de 2.54 cm en todo el documento.</span></label>
+      <label class="check-item"><input type="checkbox" data-id="f2"><span>Sangría de 1.27 cm al inicio de cada párrafo (excepto la primera línea del Resumen).</span></label>
+      <label class="check-item"><input type="checkbox" data-id="f3"><span>Los cuatro niveles de título usan el formato correcto (centrado/izquierda, negrita, cursiva, sangría según el nivel).</span></label>
+      <label class="check-item"><input type="checkbox" data-id="f4"><span>La numeración de página inicia en el Resumen, no en la portada ni en los índices.</span></label>
+    </div>
+
+    <div class="check-group">
+      <h4>Contenido</h4>
+      <label class="check-item"><input type="checkbox" data-id="c1"><span>El objetivo general sigue la estructura: verbo infinitivo + objeto + indicador + condición + tiempo.</span></label>
+      <label class="check-item"><input type="checkbox" data-id="c2"><span>Los objetivos específicos, en conjunto, sustentan por completo el objetivo general.</span></label>
+      <label class="check-item"><input type="checkbox" data-id="c3"><span>La Justificación responde a trascendencia, vulnerabilidad, magnitud y factibilidad, sin transcribir las preguntas guía.</span></label>
+      <label class="check-item"><input type="checkbox" data-id="c4"><span>El Marco Teórico compara y relaciona autores, en vez de solo enumerarlos.</span></label>
+      <label class="check-item"><input type="checkbox" data-id="c5"><span>La Metodología incluye una matriz que conecta objetivos, variables e instrumentos.</span></label>
+      <label class="check-item"><input type="checkbox" data-id="c6"><span>Los Resultados discuten los hallazgos frente a la literatura citada, no solo los describen.</span></label>
+      <label class="check-item"><input type="checkbox" data-id="c7"><span>Las Conclusiones no repiten cifras de Resultados; aportan interpretación y recomendaciones.</span></label>
+    </div>
+
+    <div class="check-group">
+      <h4>Citación APA 7</h4>
+      <label class="check-item"><input type="checkbox" data-id="a1"><span>Toda cita en el texto tiene su entrada correspondiente en la lista de referencias, y viceversa.</span></label>
+      <label class="check-item"><input type="checkbox" data-id="a2"><span>Las citas textuales incluyen número de página; las paráfrasis, al menos autor y año.</span></label>
+      <label class="check-item"><input type="checkbox" data-id="a3"><span>La lista de referencias está en orden alfabético, con sangría francesa.</span></label>
+      <label class="check-item"><input type="checkbox" data-id="a4"><span>Los títulos de libros, informes y tesis están en cursiva.</span></label>
+    </div>
+
+    <div class="check-group">
+      <h4>Figuras, tablas y entrega</h4>
+      <label class="check-item"><input type="checkbox" data-id="t1"><span>Cada figura y tabla tiene número, título en cursiva y nota con la fuente ("Elaboración propia" u origen).</span></label>
+      <label class="check-item"><input type="checkbox" data-id="t2"><span>Los anexos están numerados y referenciados en algún punto del texto.</span></label>
+      <label class="check-item"><input type="checkbox" data-id="t3"><span>El archivo final está nombrado con matrícula + apellido paterno + apellido materno + nombre(s).</span></label>
+      <label class="check-item"><input type="checkbox" data-id="t4"><span>Se generaron los cuatro PDF de entrega: Biblioteca, Subdirección, Asesor Externo y Asesor Universitario.</span></label>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo-utm.png" alt="Universidad Tecnológica de Morelia">
+    <b>Universidad Tecnológica de Morelia · Subdirección de Tecnologías de la Información y Comunicación</b>
+    <span>Maestría en Ingeniería Aplicada en la Innovación Tecnológica (MITI)</span>
+    <span class="fine">Basado en la Guía para la escritura de Tesis, versión 2 (octubre 2024). Material de apoyo académico — los ejemplos son de contexto, no textos para copiar en tu propio reporte.</span>
+  </div>
+</footer>
+
+<a href="#inicio" class="backtop" id="backtop" aria-label="Volver arriba">↑</a>
+
+<script>
+  // active nav link on scroll
+  const sections = document.querySelectorAll('main section, header.hero');
+  const navLinks = document.querySelectorAll('.navlink');
+  function onScroll(){
+    let current = 'inicio';
+    sections.forEach(sec => {
+      const rect = sec.getBoundingClientRect();
+      if(rect.top <= 120) current = sec.id;
+    });
+    navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+    document.getElementById('backtop').classList.toggle('show', window.scrollY > 600);
+  }
+  document.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // checklist persistence
+  const items = document.querySelectorAll('.check-item input[type=checkbox]');
+  const STORAGE_KEY = 'miti-tesis-checklist';
+  function loadState(){
+    try{ return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }catch(e){ return {}; }
+  }
+  function saveState(state){
+    try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }catch(e){}
+  }
+  function updateProgress(){
+    const total = items.length;
+    const done = document.querySelectorAll('.check-item input:checked').length;
+    document.getElementById('progress-bar').style.width = (total ? (done/total*100) : 0) + '%';
+    document.getElementById('progress-label').textContent = done + ' / ' + total;
+  }
+  const state = loadState();
+  items.forEach(inp => {
+    const id = inp.dataset.id;
+    if(state[id]){ inp.checked = true; inp.closest('.check-item').classList.add('checked'); }
+    inp.addEventListener('change', () => {
+      const s = loadState();
+      s[id] = inp.checked;
+      saveState(s);
+      inp.closest('.check-item').classList.toggle('checked', inp.checked);
+      updateProgress();
+    });
+  });
+  updateProgress();
+</script>
+
+</body>
+</html>
